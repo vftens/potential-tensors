@@ -1,0 +1,47 @@
+
+L:\Documents and Settings\Administrator\Рабочий стол\2013\glpk-4.52.1\glpk-4.52.1\examples>..\w32\glpsol.exe -m prod_nesterenko_ind1_1.mod 
+GLPSOL: GLPK LP/MIP Solver, v4.52
+Parameter(s) specified in the command line:
+ -m prod_nesterenko_ind1_1.mod
+Reading model section from prod_nesterenko_ind1_1.mod...
+Reading data section from prod_nesterenko_ind1_1.mod...
+54 lines were read
+Generating profit...
+Generating krs...
+Generating tim...
+Generating pl1...
+Generating pl2...
+Generating pl3...
+Model has been successfully generated
+glp_mpl_build_prob: row profit; constant term -99900 ignored
+GLPK Integer Optimizer, v4.52
+6 rows, 3 columns, 12 non-zeros
+3 integer variables, none of which are binary
+Preprocessing...
+1 row, 3 columns, 3 non-zeros
+3 integer variables, none of which are binary
+Scaling...
+ A: min|aij| = 2.000e+000  max|aij| = 5.000e+000  ratio = 2.500e+000
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 1
+Solving LP relaxation...
+GLPK Simplex Optimizer, v4.52
+1 row, 3 columns, 3 non-zeros
+*     0: obj = -9.990000000e+004  infeas = 0.000e+000 (0)
+*     2: obj =  8.390000000e+004  infeas = 0.000e+000 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
++     2: mip =     not found yet <=              +inf        (1; 0)
+Solution found by heuristic: 83893
++     6: >>>>>  8.389800000e+004 <=  8.389800000e+004   0.0% (3; 0)
++     6: mip =  8.389800000e+004 <=     tree is empty   0.0% (0; 5)
+INTEGER OPTIMAL SOLUTION FOUND
+Time used:   0.0 secs
+Memory used: 0.1 Mb (120618 bytes)
+Profit=83898 Rubles
+Display statement at line 38
+plan[1].val = 3798
+plan[2].val = 0
+plan[3].val = 3670
+Model has been successfully processed
